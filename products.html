@@ -16,15 +16,33 @@
     <!--sidebar-->
    <div class="sidebar">
       <div id="logo">
+        <p id="ham-menu-s" onclick="hidesidebar()"><i class="fas fa-bars"></i></p>
         <a href="homepage.html"><img src="img/logo.png" alt="Company logo" title="Our Logo" id="logo-img"></a>
-        
       </div>
       <div id="menu">
-           <ul>
+         <ul>
            <li><a href="company.html"><i class="far fa-building"></i> COMPANY</a></li>
-           <li onmouseover="inworks()" onmouseout="outworks()"><a class="active"><i class="fas fa-briefcase"></i> WORKS</a></li>
-           <li onmouseover="insoln()" onmouseout="outsoln()"><a><i class="far fa-lightbulb"></i> SOLUTIONS</a></li>
-           <li><a href="insights.html" ><i class="fas fa-assistive-listening-systems"></i> INSIGHTS</a></li>
+           <li id="works" onmouseover="inworks()" onmouseout="outworks()"><a><i class="fas fa-briefcase"></i> WORKS</a>
+                <div class="m-option">
+                  <div id="triangle-left"></div>
+                  <ul>
+                    <li><a href="products.html">Products</a></li><hr>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                  </ul>
+                </div>
+           </li>
+           <li id="supports" onmouseover="insoln()" onmouseout="outsoln()"><a><i class="far fa-lightbulb"></i> SOLUTIONS</a>
+           <div class="m-option-2">
+                  <div id="triangle-left"></div>
+                  <ul>
+                    <li><a href="application-development.html">Application Dev.</a></li><hr>
+                    <li><a href="data-science.html">Data Science</a></li><hr>
+                    <li><a href="sciever-studio.html">Sciever Studio</a></li><hr>
+                    <li><a href="sciever-outreach.html">Sciever Outreach</a></li>
+                  </ul>
+                </div>
+            </li>
+           <li><a href="insights.html"><i class="fas fa-assistive-listening-systems"></i> INSIGHTS</a></li>
            <li><a href="career.html"><i class="fas fa-handshake"></i> CAREER</a></li>
            <li><a href="contact.html"><i class="fas fa-phone-volume"></i> CONTACT</a></li>
          </ul>
@@ -32,9 +50,7 @@
    </div>
    <!--End of sidebar-->
 
-    <!--End of sidebar-->
-
-   <div class="works" onmouseover="inworks()" onmouseout="outworks()">
+ <div class="works" onmouseover="inworks()" onmouseout="outworks()">
         <div id="triangle-left"></div>
         <!-- Services -->
         <div class="options">
@@ -87,13 +103,13 @@
                             <h5>Board</h5>
                             <p>A complete solution for collecting data of the users that install renewable energy technologies .</p>
                         </div>
-                   </div>
-                 </div>
-               </div>
+                     </div>
+                  </div>
+               </div> 
                <div class="more">
-                   <a href="products.html">View all ></a>
-               </div>
-           </div>
+                  <a href="products.html">View more ></a>
+               </div>           
+            </div>
            <div class="portfolio">
               <div class="title">
                   <h3>Portfolio</h3>
@@ -144,15 +160,13 @@
                             <p>A complete solution for collecting data of the users that install renewable energy technologies .</p>
                         </div>
                    </div>
-                 </div>
-                  <div class="more">
-                   <a href="portfolio.html">View all ></a>
-                  </div>
-               </div>
-
-           </div>
+                </div>               
+            </div>
+            <div class="more">
+                  <a href="products.html">View more ></a>
+               </div> 
         </div>
-       
+       </div>
    </div>
 
    <!--End of Works-->
@@ -224,11 +238,14 @@
  
   <div class="content">
       <div class="tabContainer">
+        <p id="ham-menu" onclick="showsidebar()"><i class="fas fa-bars"></i></p>
         <h3>Products</h3>
         <div class="buttonContainer col-12">
+          <center>
             <button id="btn1" onclick="showPanel(0,'#e0e0e0')">RESA</button>
             <button id="btn2" onclick="showPanel(1,'#e0e0e0')">CV Portal</button>          
             <button id="btn3" onclick="showPanel(2,'#e0e0e0')">Board</button>         
+          </center>
         </div>
         <div class="tabPanel" id="products">
             <div class="products-content">
@@ -253,9 +270,9 @@
 </div>
 
 <!--footer--->
-  <footer>
+ <!--  <footer>
     <span>Copyright 2020. All Rights Reserved - Sciever Inc. Pvt. Ltd. | Chhauni, Kathmandu, Nepal | +977 9851218096 | info@scieverinc.com<span>
-  </footer>
+  </footer> -->
 
 <!---Script--->
 <script src="js/myScript.js"></script>

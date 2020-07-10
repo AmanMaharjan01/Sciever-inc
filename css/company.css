@@ -4,12 +4,13 @@
 .tabContainer{
     width: 100%;
     min-height: 350px;
+    padding: 10px;
 }
 
-.tabContainer  h3
+.tabContainer h3
 {
     text-align: center;
-    margin: 3px;
+    margin-top: 45px;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -18,8 +19,7 @@
    min-height: 70px;
    display: flex;
    justify-content: center;
-   padding-top: 15px;
-   padding-bottom: 20px;	
+   padding-top: 15px;	
 }
 
 .tabContainer .buttonContainer button{
@@ -30,12 +30,12 @@
     font-size: 80%;
     color: #424242;
     background-color: #fff;
-    margin-top: 5px;
 	  font-family: 'Open Sans', sans-serif;
     border-top: 2px solid #e0e0e0;
     border-bottom: 2px solid #e0e0e0;
     border-left: 2px solid #e0e0e0;
     border-right: 2px solid #e0e0e0;
+    margin: 5px;
 }
 
 .tabContainer .buttonContainer button:hover{
@@ -50,13 +50,21 @@
 
 .tabContainer .tabPanel #logo-img
 {
-	width: 250px;
-	margin-top: 60px;
+	width: 220px;
+  margin-top: 60px;
+	margin-bottom: 40px;
+}
+
+.tabContainer .tabPanel
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
 }
 
 .tabContainer #products
 {
    text-align: left;
+   padding: 10px 40px 10px 40px;
 }
 
 .tabContainer #products .row
@@ -72,13 +80,16 @@
 }
 .tabContainer #products .products-content
 {
+  width: 100%;
   display: flex;
   flex-direction: row;
+  padding: 20px;
 }
 
 .tabContainer #products .products-content div
 {
   flex: 1;
+  padding: 0px;
 }
 
 .tabContainer #products div
@@ -88,17 +99,20 @@
 
 .tabContainer #products h3
 {
-  font-size: 20px;
+  font-size: 22px;
   text-align: left;
-  padding: 35px 20px 30px 0px;
+  display: inline-block;
+  padding: 30px 0px 30px 0px;
+  font-weight: bold;
 }
 
 .tabContainer #products  p
 {
-  font-size: 13px;
+  font-size: 14px;
   padding: 20px 20px 5px 0px;
   line-height: 25px;
 }
+
 
 @media all and (max-width: 1100px)
 {
@@ -112,7 +126,7 @@
 {
   .tabContainer #products .products-content
   {
-    width: 80%;
+    width: 100%;
   }
 
   .tabContainer .buttonContainer

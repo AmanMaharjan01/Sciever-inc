@@ -12,16 +12,19 @@ body
 	display: flex;
 	flex-direction: row;
 	width: 100%;
-	min-height: 95vh;
+	min-height: 750px;
 }
 
 .sidebar 
 {
-   flex: 1;
    padding: 0;
-   height: 722px;
+   flex: 1;
+   height: 745px;
    display: flex;
    flex-direction: column;
+   background-color: #f9f9f9;
+   overflow: hidden;
+   position: relative;
 }
 
 .sidebar #logo
@@ -34,15 +37,117 @@ body
 	flex: 2;
 }
 
+.sidebar #menu .m-option
+{
+   position: absolute;
+   z-index: 99;
+   background-color: #e0e0e0;
+   width: 70%;
+   margin-left: -45px;
+   margin-top: 10px;
+   display: none;
+}
+
+.sidebar #menu .m-option #triangle-left
+{
+	  position: absolute;
+	  top: -15px;
+	  left: 20%;
+	  width: 0;
+	  height: 0;
+	  border-top: 50px solid transparent;
+	  border-right: 100px solid #e0e0e0;
+	  border-bottom: 50px solid transparent;
+	  z-index: -1;
+	  transform: rotate(90deg);
+}
+
+.sidebar #menu .m-option ul
+{
+   width: 100%;
+   height: 100%;
+   padding: 0px;
+   margin: 0px;
+
+}
+
+.sidebar #menu .m-option ul li
+{
+	margin: 0px;
+	text-align: center;
+}
+
+.sidebar #menu .m-option ul hr
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.sidebar #menu .m-option-2
+{
+   position: absolute;
+   z-index: 99;
+   background-color: #e0e0e0;
+   width: 70%;
+   margin-left: -45px;
+   margin-top: 10px;
+   display: none;
+}
+
+.sidebar #menu .m-option-2 #triangle-left
+{
+	  position: absolute;
+	  top: -15px;
+	  left: 20%;
+	  width: 0;
+	  height: 0;
+	  border-top: 50px solid transparent;
+	  border-right: 100px solid #e0e0e0;
+	  border-bottom: 50px solid transparent;
+	  z-index: -1;
+	  transform: rotate(90deg);
+}
+
+.sidebar #menu .m-option-2 ul
+{
+   width: 100%;
+   height: 100%;
+   padding: 0px;
+   margin: 0px;
+
+}
+
+.sidebar #menu .m-option-2 ul li
+{
+	margin: 0px;
+	text-align: center;
+}
+
+.sidebar #menu .m-option-2 ul hr
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+.sidebar #logo p
+{
+	font-size: 22px;
+	margin: 14.5px 0px 0px 19px;
+	color: #5e5e5e;
+	cursor: pointer;
+	width: 25px;
+}
+
 .sidebar #logo-img
 {
 	width: 100px;
-	margin: 50px;
+    margin: 40px 10px 10px 80px;
+	
 }
 
 .sidebar #menu ul 
 {
-   margin: 30px 10px 10px 20px;
+   margin: 40px 10px 10px 30px;
 }
 
 .sidebar #menu ul li
@@ -90,8 +195,8 @@ body
 .works #triangle-left
 {
 	  position: relative;
-	  top: 38%;
-	  left: -50px;
+	  top: 40.5%;
+	  left: -35px;
 	  width: 0;
       height: 0;
       border-top: 50px solid transparent;
@@ -116,9 +221,17 @@ body
 }
 
 .works .options .products
+{	
+	flex: 1;
+}
+
+.works .options .products 
 {
 	display: flex;
 	flex-direction: column;
+	color: #000;
+	height: 100%;
+	text-decoration: none;
 }
 
 .works .options .products div
@@ -130,8 +243,9 @@ body
 {
 	margin:0px;
 	width: 80%;
-	height: 100%;
 	margin: 0 auto;
+	text-decoration: none;
+
 }
 
 .works .options .portfolio .content
@@ -165,29 +279,40 @@ body
 {
 	font-size: 10px;
 	margin-bottom: 0px;
+	text-decoration: none;
+
+}
+
+.works .options .protfolio
+{	
+	flex: 1;
 }
 
 .works .options .portfolio
 {
 	display: flex;
 	flex-direction: column;
+	color: #000;
+	height: 100%;
 }
 
-.works .options .portfolio div
+.works .options .portfolio  div
 {
 	flex: 1;
 }
 
 .works .options h3
 {
-	padding: 20px;
+	padding: 25px 0px 0px 40px;
 	font-size: 25px;
 	color: rgba(0,0,0,0.7);
+	text-decoration: none;
+
 }
 
 .works .more
 {
-   font-size: 13px;
+   font-size: 11px;
    width: 100%;	
    position: absolute;
    bottom: 1%;
@@ -205,6 +330,7 @@ body
 	text-decoration: none;
 	color: #669999;
 }
+
 
 /*Support*/
 
@@ -225,8 +351,8 @@ body
 #support #triangle-left
 {
 	  position: relative;
-	  top: 44%;
-	  left: -50px;
+	  top: 46.5%;
+	  left: -30px;
 	  width: 0;
       height: 0;
       border-top: 50px solid transparent;
@@ -265,6 +391,11 @@ body
 	font-weight: bold;
 }
 
+#support .row div .content
+{
+	margin-top: 35px;
+}
+
 #support .row div .content ul li
 {
 	list-style: none;
@@ -283,19 +414,39 @@ body
 .content
 {
 	flex: 5;
-	margin: 10px auto;
-	margin-top: 10px;
+	margin: 0 auto;
 	display: flex;
 	flex-direction: column;
 }
 
-.content .content-top,.content-bottom
+.content .content-top
 {
-	padding: 0;
+	padding: 10px;
+	flex: 2;
+	display: flex;
+	flex-direction: row;
+}
+
+.content .content-bottom
+{
+	padding: 10px;
 	flex: 1;
 	display: flex;
 	flex-direction: row;
+	height: 100%;
+}
 
+.content .content-footer
+{
+   height: 40px;
+   text-align: center;
+   color: rgba(0,0,0,0.5);
+}
+
+.content .content-footer
+{
+	margin: 0;
+	padding-top: 10px;
 }
 
 .content .content-bottom section
@@ -305,19 +456,28 @@ body
 
 .content .content-top .content-top-right
 {
-    flex: 1;
+    width: 40%;
 }
 
 .content .content-top .content-top-left
 {
-    flex: 2;
+    width: 60%;
+}
+.content #ham-menu
+{
+	position: absolute;
+	font-size: 22px;
+	margin: 5px 0px 0px 10px;
+	color: #5e5e5e;
+	cursor: pointer;
+	z-index: 100;
+	display: none;
 }
 
 .content .content-top #aniversary
 {
-	width: 85%;
-	margin-top: 5px;
-	margin-left: 60px;
+	width: 80%;
+	margin-top: 30px;
 	transition: 0.4s;
 	cursor: pointer;
 }
@@ -334,8 +494,8 @@ body
 
 .content .content-top .content-top-right #text
 {
-   width: 95%;
-   margin: 40px auto;
+   width: 85%;
+   margin-top: 60px;
    flex: 3;
 
 }
@@ -343,8 +503,9 @@ body
 .content .content-top .content-top-right #text h1
 {
 	font-family: 'Raleway', sans-serif;
-    font-size: 180%;
+    font-size: 190%;
     font-weight: bold;
+    padding-left: 5px;
 }
 
 .content .content-top .content-top-right #text p
@@ -366,6 +527,7 @@ body
 	font-size: 15px;
 	color: rgba(0,0,0,0.6);
 	margin-top: 20px;
+	margin-left: 10px;
 	background-color: unset;
 	border: 1px solid rgba(0,0,0,0.2);
 }
@@ -390,6 +552,7 @@ body
     display: flex;
     flex-direction: column;
 	font-family: 'Open Sans', sans-serif;
+	padding: 10px;
 	color: rgba(0,0,0,0.7);
 }
 
@@ -430,7 +593,7 @@ body
 .content .content-bottom .content-bottom-right .our-client
 {
    width: 80%;
-   margin: 50px auto;
+   margin: 30px auto;
 }
 
 .content .content-bottom .content-bottom-right .client-logo
@@ -455,7 +618,7 @@ body
 	width: 100%;
 }
 
-footer
+/*footer
 {
 	width: 100%;
 	min-height: 28px;
@@ -467,7 +630,7 @@ footer span
 	font-size: 0.7rem;
 	color: rgba(0,0,0,0.5);
 }
-
+*/
 
 
 @media all and (max-width: 1200px)
@@ -475,5 +638,63 @@ footer span
 	.content .content-top,.content-bottom
 	{
 		flex-direction: column;
+	}
+
+	.content .content-bottom
+	{
+		flex-direction: column;
+	}
+
+	.sidebar 
+	{
+		position: relative;
+		position: fixed;
+		width: 0;
+		height: 100%;
+		z-index: 998;
+	}
+
+	.content #ham-menu
+	{
+		display: inline;
+		cursor: pointer;
+	}
+
+	.content .content-top .content-top-right
+	{
+		width: 100%;
+	}
+
+	.content .content-top .content-top-left
+	{
+		width: 100%;
+	}
+
+}
+
+@media all and (max-width: 1385px)
+{
+	.works
+	{
+		width: 0px;
+		height: 0px;
+		overflow: hidden;
+	}
+
+	.sidebar #menu ul #works:hover .m-option
+	{
+		display: block;
+	}
+
+    #support
+    {
+       width: 0px;
+	   height: 0px;
+	   overflow: hidden;
+    }
+
+    .sidebar #menu ul #supports:hover .m-option-2
+	{
+		display: block;
 	}
 }
