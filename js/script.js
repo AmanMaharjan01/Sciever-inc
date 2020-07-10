@@ -28,7 +28,8 @@ function showsidebar()
 }
 
 function hidesidebar()
-{  
+{ 
+document.querySelector(".sidebar").style.transition = "0s"; 
 	document.querySelector(".sidebar").style.width = "0px";
 	document.querySelector(".sidebar").style.flex = "0";
 	document.querySelector("#ham-menu").style.display = "inline";
