@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway&display=swap');
+
+.tabContainer{
+    width: 100%;
+    min-height: 350px;
+}
+
+.tabContainer  h3
+{
+    text-align: center;
+    margin: 3px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.tabContainer .buttonContainer
+{
+   min-height: 70px;
+   display: flex;
+   justify-content: center;
+   padding-top: 15px;
+   padding-bottom: 20px;	
+}
+
+.tabContainer .buttonContainer button{
+    width: 200px;
+    height: 40px;
+    cursor: pointer;
+    font-family: sans-serif;
+    font-size: 80%;
+    color: #424242;
+    background-color: #fff;
+    margin-top: 5px;
+	  font-family: 'Open Sans', sans-serif;
+    border-top: 2px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
+    border-left: 2px solid #e0e0e0;
+    border-right: 2px solid #e0e0e0;
+}
+
+.tabContainer .buttonContainer button:hover{
+    background-color: #d7d4d4;
+}
+.tabContainer .tabPanel{
+    color: black;
+    text-align: center;
+    font-size: 22px;
+	  font-family: 'Open Sans', sans-serif;
+}
+
+.tabContainer .tabPanel #logo-img
+{
+	width: 250px;
+	margin-top: 60px;
+}
+
+.tabContainer #products
+{
+   text-align: left;
+}
+
+.tabContainer #products .row
+{
+   margin-left: 1px;
+  
+}
+
+.tabContainer #products #products-img
+{
+  width: 100%;
+  margin-top: 30px;
+}
+.tabContainer #products .products-content
+{
+  display: flex;
+  flex-direction: row;
+}
+
+.tabContainer #products .products-content div
+{
+  flex: 1;
+}
+
+.tabContainer #products div
+{
+    text-align: left;
+}
+
+.tabContainer #products h3
+{
+  font-size: 20px;
+  text-align: left;
+  padding: 35px 20px 30px 0px;
+}
+
+.tabContainer #products  p
+{
+  font-size: 13px;
+  padding: 20px 20px 5px 0px;
+  line-height: 25px;
+}
+
+@media all and (max-width: 1100px)
+{
+  .tabContainer #products .products-content
+  {
+    flex-direction: column;
+  }
+}
+
+@media all and (max-width: 764px)
+{
+  .tabContainer #products .products-content
+  {
+    width: 80%;
+  }
+
+  .tabContainer .buttonContainer
+  {
+    flex-direction: column;
+  }
+
+  .tabContainer .buttonContainer button{
+    {
+      width: 40%;
+    }
+
+}

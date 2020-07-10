@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Raleway&display=swap');
+
+.content .contact
+{
+	width: 100%;
+	min-height: 560px;
+	display: flex;
+	font-family: 'Raleway', sans-serif;
+
+}
+
+.content .contact div
+{
+	flex: 1;
+
+}
+
+.content .contact .info
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.content .contact .info .form
+{
+	flex: 2;
+	padding: 30px;
+}
+
+
+.content .contact .info .form h3
+{
+	padding: 10px 0px 0px 10px;
+	font-size: 20px;
+}
+
+.content .contact .info .form form input,textarea
+{
+   width: 60%;	
+   margin: 12px;
+   padding: 10px;
+   border: none;
+   border-bottom: 3px solid rgba(0,0,0,0.6)
+}
+
+.content .contact .info .form form button
+{
+	margin: 12px;
+	width: 100px;
+	height:40px;
+	border: 1px solid #000;
+	background-color: #000;
+	color: #fff;
+}
+
+.content .contact .info .form form button:hover
+{
+	background-color: #fff;
+	color: #000;
+}
+
+.content .contact .info .form form textarea
+{
+	height: 110px;
+}
+
+.content .contact .info .information
+{
+	flex: 1;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    padding: 0px 30px 0px 30px;
+}
+
+.content .contact .map
+{
+	margin: 0;
+
+}
+
+@media all and (max-width: 1200px)
+{
+	.content .contact
+	{
+		width: 500px;
+	}
+
+	.content .contact
+	{
+		flex-direction: column;
+	}
+}
+
+@media all and (max-width: 670px)
+{
+	.content .contact
+	{
+		width: 400px;
+	}
+}
+
+@media all and (max-width: 555px)
+{
+	.content .contact
+	{
+		width: 300px;
+	}
+}
