@@ -185,7 +185,7 @@ body
 	height: 750px;
 	position: absolute;
 	top: 0;
-	left: 15%;
+	left: 16%;
 	background-color: #e0e0e0;
     z-index: 999;  
 	font-family: 'Raleway', sans-serif;
@@ -196,7 +196,7 @@ body
 {
 	  position: relative;
 	  top: 40.5%;
-	  left: -35px;
+	  left: -30px;
 	  width: 0;
       height: 0;
       border-top: 50px solid transparent;
@@ -341,7 +341,7 @@ body
 	background-color: #e0e0e0;
 	position: absolute;
 	top: 0;
-	left: 15%;
+	left: 16%;
 	font-family: 'Raleway', sans-serif;
 	display: none;
 	z-index: 999;
@@ -352,7 +352,7 @@ body
 {
 	  position: relative;
 	  top: 46.5%;
-	  left: -30px;
+	  left: -25px;
 	  width: 0;
       height: 0;
       border-top: 50px solid transparent;
@@ -670,10 +670,6 @@ footer span
 		width: 100%;
 	}
 
-}
-
-@media all and (max-width: 1385px)
-{
 	.works
 	{
 		width: 0px;
@@ -696,5 +692,17 @@ footer span
     .sidebar #menu ul #supports:hover .m-option-2
 	{
 		display: block;
+	}
+
+
+}
+
+@media all and (max-width: 1385px)
+{
+	
+	.sidebar #menu ul 
+	{
+		margin: 40px 10px 10px 20px;
+		padding-left: 25px;
 	}
 }
