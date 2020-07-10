@@ -465,7 +465,7 @@ body
 }
 .content #ham-menu
 {
-	position: absolute;
+	position: sticky;
 	font-size: 22px;
 	margin: 4px 0px 0px 9px;
 	color: #5e5e5e;
@@ -615,7 +615,7 @@ body
 .content .content-bottom .content-bottom-right .client-logo div img
 {
 	margin-top: 13px;
-	width: 100%;
+	width: 80%;
 }
 
 /*footer
