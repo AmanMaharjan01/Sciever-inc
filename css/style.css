@@ -19,7 +19,7 @@ body
 {
    padding: 0;
    flex: 1;
-   height: 745px;
+   height: 100vh;
    display: flex;
    flex-direction: column;
    background-color: #f9f9f9;
@@ -157,17 +157,82 @@ body
 	padding: 10px;
 }
 
+.sidebar #menu ul li #i1
+{
+	margin-left: 7px;
+	font-size: 13px;
+}
+
+.sidebar #menu ul li #i2
+{
+	margin-left: 7px;
+	font-size: 13px;
+}
+
+.sidebar #menu ul li #i3
+{
+	margin-left: 7px;
+	font-size: 13px;
+}
+
+.sidebar #menu ul li #i4
+{
+	margin-left: 7px;
+	font-size: 13px;
+}
+
+.sidebar #menu ul li #i5
+{
+	margin-left: 6px;
+	font-size: 13px;
+}
+
+.sidebar #menu ul li #i6
+{
+	margin-left: 10px;
+	font-size: 13px;
+}
+
 .sidebar #menu ul li a
 {
 	color: #6e6e6e;
-	font-size: 0.9rem;
 	cursor: pointer;
+}
 
+
+.sidebar #menu ul #company a
+{
+	font-size: 0.9rem;
+}
+
+.sidebar #menu ul #works a
+{
+	font-size: 0.8rem;
+}
+
+.sidebar #menu ul #supports a
+{
+	font-size: 0.9rem;
+}
+
+.sidebar #menu ul #insights a
+{
+	font-size: 0.8rem;
+}
+
+.sidebar #menu ul #career a
+{
+	font-size: 0.7rem;
+}
+
+.sidebar #menu ul #contact a
+{
+	font-size: 0.9rem;
 }
 
 .sidebar #menu ul li a.active
 {
-	color: #000;
+	color: #669999;
 }
 
 .sidebar #menu ul li a:hover
